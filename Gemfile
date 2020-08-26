@@ -6,7 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'coffee-rails', '~> 4.2'
-gem 'haml-rails'
+gem 'haml-rails', '~> 2.0.1'
 gem 'jbuilder', '~> 2.5'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.7'
@@ -19,7 +19,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara'
   gem 'database_cleaner'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 4.0.1'
   gem 'selenium-webdriver'
 end
 
