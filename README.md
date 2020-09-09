@@ -4,7 +4,7 @@
 
 ## Models
 * Post: date (date) rationale (text)
-* User: (Devise gem)
+* x User: (Devise gem)
 * AdminUser (STI)
 
 ## Features
@@ -31,6 +31,8 @@
   gem 'database_cleaner'
   ```
 * run `bundle` to install gems
+
+### RSpec
 * run the `RSpec` installer
 ```bash
 rails g rspec:install
@@ -52,3 +54,18 @@ rails g rspec:install
 
     # rest of config...
   end
+
+### Devise
+* Add the `Devise` gem and run `rails g devise:install`
+* Follow the post-installation instructions printed on the console.
+* Update the email address in `config/initializers/devise.rb` to the email address
+  your emails will be sent from.
+  ```
+  config.mailer_sender = '<your-email@here.com>'
+  ```
+* Generate the devise views with `rails g devise:views`
+* Convert the views to haml with `rails haml:erb2haml`
+* Generate the User model
+  ```
+  rails g devise User first_name:string last_name:string type:string
+  ```
