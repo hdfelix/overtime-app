@@ -5,7 +5,7 @@
 ## Models
 * Post: date (date) rationale (text)
 * x User: (Devise gem)
-* AdminUser (STI)
+* X AdminUser (STI)
 
 ## Features
 * Approval workflow
